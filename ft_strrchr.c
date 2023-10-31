@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 12:28:17 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/25 12:49:53 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/10/31 15:55:48 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ char	*ft_strrchr(const char *s, int c)
 	result = NULL;
 	while (*s)
 	{
-		if (*s == (char)c)
+		if (*s == (unsigned char)c)
 		{
 			result = (char *)s;
 		}
 		s++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 	{
 		return ((char *)s);
 	}
@@ -36,22 +36,16 @@ char	*ft_strrchr(const char *s, int c)
 // {
 //     char arr[] = "helloa world";
 //     char symb = 'o';
-//     char *i = ft_strrchr(arr, symb); // Изменили тип i на char *
+//     char *i = ft_strrchr(arr, symb);
 
 //     if (i != NULL)
 //     {
-//         printf("%s\n", i); // Выводим строку, начиная с найденного символа
+//         printf("%s\n", i);
 //     }
 //     else
 //     {
-//         printf("Символ не найден.\n");
+//         printf("Symbol not found.\n");
 //     }
 
 //     return 0;
 // }
-
-// Функция strrchr в стандартной библиотеке 
-// C используется для поиска последнего вхождения 
-// заданного символа в строке (массиве символов) 
-// и возвращения указателя на этот символ в строке. 
-// Если символ не найден, функция возвращает NULL.

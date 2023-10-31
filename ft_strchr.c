@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 10:14:19 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/25 10:36:58 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/10/31 15:45:07 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,30 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{
-		if (*s == c)
+		if (*s == (unsigned char)c)
 		{
 			return ((char *)s);
 		}
 		s++;
 	}
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 	{
 		return ((char *)s);
 	}
 	return (NULL);
 }
+// int main() {
+//     const char *str = "This is a test string.";
+//     int ch = 's';
+
+//     char *result = ft_strchr(str, ch);
+
+//     if (result != NULL) {
+//         printf("Character '%c' found at position: %ld\n",
+				// (char)ch, result - str);
+//     } else {
+//         printf("Character '%c' not found in the string.\n", (char)ch);
+//     }
+
+//     return 0;
+// }

@@ -6,13 +6,12 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 10:46:28 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/28 13:06:01 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/10/31 15:50:18 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -51,6 +50,7 @@ int		ft_isprint(int c);
 size_t	ft_strlcat(char *dest, const char *src, size_t detsize);
 char	*ft_strchr(const char *s, int c);
 void	*ft_calloc(size_t count, size_t size);
+char	*ft_strrchr(const char *str, int character);
 // char	*ft_strcpy(char *str1, char *str2);
 // void	*ft_overflow(size_t count, size_t size);
 // void ft_putchar(char c);
@@ -61,7 +61,6 @@ void	*ft_calloc(size_t count, size_t size);
 // int ft_strcmp(const char *str1, const char *str2);
 // FILE *ft_fopen(const char *filename, const char *mode);
 // int ft_fclose(FILE *stream);
-// char *ft_strrchr(const char *str, int character);
 // char* ft_strncpy(char * dst, const char * src, size_t len);
 // char* ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
 // int ft_count_words(const char *s, char c);
