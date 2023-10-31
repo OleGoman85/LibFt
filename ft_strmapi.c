@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:04:59 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/28 13:21:28 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/10/28 13:36:10 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
     if (index % 2 == 0)
     {
-        // Если индекс четный, возвращаем символ в верхнем регистре
         if (c >= 'a' && c <= 'z')
             return c - 32;
     }
     else
     {
-        // Если индекс нечетный, оставляем символ как есть
         return c;
     }
 }
@@ -53,7 +51,7 @@ int main() {
     if (result_str != NULL) {
         printf("Original String: %s\n", input_str);
         printf("Modified String: %s\n", result_str);
-        free(result_str); // Освобождаем выделенную память
+        free(result_str);
     } else {
         printf("Memory allocation failed.\n");
     }

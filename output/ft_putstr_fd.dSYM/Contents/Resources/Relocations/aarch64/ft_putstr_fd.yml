@@ -1,8 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/olegoman/WORK/HIVE/LibFt/output/ft_putstr_fd'
-relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _ft_putstr_fd, symObjAddr: 0x0, symBinAddr: 0x100003ED0, symSize: 0x74 }
-  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _ft_putstr_fd, symObjAddr: 0x0, symBinAddr: 0x100003ED0, symSize: 0x74 }
-  - { offsetInCU: 0x73, offset: 0x73, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x74, symBinAddr: 0x100003F44, symSize: 0x48 }
-...
