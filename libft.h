@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 10:46:28 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/31 15:50:18 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/01 10:39:08 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <string.h>
 
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putstr_fd(char *s, int fd);

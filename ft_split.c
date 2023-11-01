@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 15:53:39 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/27 17:18:22 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/01 13:07:16 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,19 @@
 static int	count_words(const char *s, char c)
 {
 	int	count;
-	int	in_word;
+	int	separator;
 
 	count = 0;
-	in_word = 0;
-	if (s == 0 || c == '\0')
-		return (-1);
+	separator = 0;
 	while (*s)
 	{
-		if (*s == c)
+		if (*s != c && separator == 0)
 		{
-			in_word = 0;
-		}
-		else if (!in_word)
-		{
-			in_word = 1;
+			separator = 1;
 			count++;
 		}
+		else if (*s == c)
+			separator = 0;
 		s++;
 	}
 	return (count);
