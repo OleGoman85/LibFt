@@ -19,6 +19,10 @@ ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_striteri.c
 # Преобразование имен файлов в объектные файлы
 OBJ_FILES = $(SRC_FILES:.c=.o)
 
+BONUS_FILES = ft_lstnew_bonus.c
+
+OBJ_BONUS = $(BONUS_FILES:.c=.o)
+
 # Правило для сборки объектных файлов
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
@@ -32,14 +36,20 @@ $(NAME): $(OBJ_FILES)
 clean:
 	rm -f $(OBJ_FILES)
 
-fclean: clean
+fclean: clean clean_bonus
 	rm -f $(NAME)
 
 re: fclean all
 
 .PHONY: all clean fclean re
 
+#BONUS
 
+bonus: $(OBJ_BONUS)
+	ar rcs $(NAME) $(OBJ_BONUS)
+
+clean_bonus:
+	rm -f $(OBJ_BONUS)
 
 
 # 1. **NAME**: Эта переменная устанавливает имя вашей целевой библиотеки. В данном случае, имя установлено как "libft.a".

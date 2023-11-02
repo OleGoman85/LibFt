@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 10:46:28 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/01 15:58:59 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/02 10:50:48 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,10 @@ size_t	ft_strlcat(char *dest, const char *src, size_t detsize);
 char	*ft_strchr(const char *s, int c);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strrchr(const char *str, int character);
+/*
+---- BONUS----
+*/
+t_list	*ft_lstnew(void *content);
 // char	*ft_strcpy(char *str1, char *str2);
 // void	*ft_overflow(size_t count, size_t size);
 // void ft_putchar(char c);
