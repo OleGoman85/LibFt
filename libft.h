@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 10:46:28 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/02 10:50:48 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/03 15:49:55 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <stdio.h>
 
 typedef struct s_list
 {
@@ -59,9 +60,13 @@ char	*ft_strchr(const char *s, int c);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strrchr(const char *str, int character);
 /*
----- BONUS----
+--------BONUS--------
 */
 t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+int		ft_lstsize(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
+void	ft_lstadd_back(t_list **lst, t_list *new);
 // char	*ft_strcpy(char *str1, char *str2);
 // void	*ft_overflow(size_t count, size_t size);
 // void ft_putchar(char c);
