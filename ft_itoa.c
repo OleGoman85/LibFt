@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 07:41:45 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/28 12:37:46 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/06 16:02:41 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ char	*ft_itoa(int n)
 
 // 	if (str != NULL) {
 // 		printf("Integer as string: %s\n", str);
-// 		free(str); // Освобождаем выделенную память
+// 		free(str);
 // 	} else {
 // 		printf("Memory allocation failed.\n");
 // 	}

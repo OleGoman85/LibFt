@@ -6,11 +6,19 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 13:02:25 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/04 14:14:05 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/06 10:14:14 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	del(void *content)
+{
+	if (content != NULL)
+	{
+		free(content);
+	}
+}
 
 void	mem_clear(t_list **lst, void (*del)(void *))
 {
@@ -37,6 +45,7 @@ t_list	*create_node(void *content)
 	new_node = (t_list *)malloc(sizeof(t_list));
 	if (new_node == NULL)
 	{
+		del(new_node);
 		return (NULL);
 	}
 	new_node->content = content;
@@ -75,6 +84,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		new_content = f(lst->content);
 		if (new_content == NULL)
 		{
+			del(new_content);
 			mem_clear(&new_list, del);
 			return (NULL);
 		}

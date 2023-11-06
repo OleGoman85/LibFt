@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 15:53:39 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/01 13:13:44 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/06 14:47:03 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,16 @@ static int	count_words(const char *s, char c)
 	return (count);
 }
 
-static char	*word_dup(const char *str, int start, int finish)
+static char	*word_copy(const char *str, int start, int finish)
 {
 	char	*word;
 	int		i;
 
+	word = NULL;
 	i = 0;
 	word = malloc((finish - start + 1) * sizeof(char));
+	if (!word)
+		return (NULL);
 	while (start < finish)
 		word[i++] = str[start++];
 	word[i] = '\0';
@@ -65,7 +68,7 @@ char	**ft_split(char const *s, char c)
 			index = i;
 		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
 		{
-			split[j++] = word_dup(s, index, i);
+			split[j++] = word_copy(s, index, i);
 			index = -1;
 		}
 		i++;
@@ -89,6 +92,7 @@ char	**ft_split(char const *s, char c)
 //             i++;
 //         }
 //         free(split);
+//         split = NULL;
 //     }
 //     else
 //     {

@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 08:47:34 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/26 16:20:36 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/06 15:49:03 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void	*ft_calloc(size_t count, size_t size)
 // 			printf("array[%zu] = %d\n", i, array[i]);
 // 		}
 
-// 		free(array); // Освобождаем память после использования
+// 		free(array);
 // 	}
 // 	else
 // 	{
@@ -67,8 +67,3 @@ void	*ft_calloc(size_t count, size_t size)
 
 // 	return 0;
 // }
-
-// Функция calloc (от "contiguous allocation") выделяет блок памяти
-// под массив, состоящий из count элементов, 
-// каждый размером size байтов. 
-// Функция инициализирует все байты в выделенной памяти нулевыми значениями.
