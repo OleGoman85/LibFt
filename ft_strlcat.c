@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 08:21:06 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/26 15:12:49 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/07 12:17:52 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	*dst = 0;
 	return (total);
-	return (0);
 }
 /*
 int main()
@@ -51,3 +50,20 @@ int main()
 
     return 0;
 }*/
+// DESCRIPTION
+// strlcat() appends string src to the end of dst. It will append 
+// at most dstsize - strlen(dst) - 1 characters. 
+// It will then NUL-terminate, unless dstsize is 0
+// or the original dst string was longer than dstsize
+// (in practice this should not happen as it means that either
+// dstsize is incorrect or that dst is not a proper string).
+
+// If the src and dst strings overlap, the behavior is undefined.
+
+// RETURN VALUES
+// strlcat() functions return the total length
+// of the string they tried to create.
+// For strlcat() that means the initial length of dst plus the length of
+// src.
+// If the return value is >= dstsize, the output string has been truncated.
+// It is the caller's responsibility to handle this.

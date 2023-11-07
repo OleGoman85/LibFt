@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 07:49:38 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/31 15:51:00 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/07 10:31:17 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,13 @@ void	ft_putendl_fd(char *s, int fd)
 	write(fd, "\n", 1);
 }
 
-// void ft_putendl_fd(char *s, int fd);
+/*void ft_putendl_fd(char *s, int fd);
 
-// int main() {
-//     char *message = "Hello";
-//     int fd = 1;
+int main() {
+    char *message = "Hello";
+    int fd = 1;
 
-//     ft_putendl_fd(message, fd);
+    ft_putendl_fd(message, fd);
 
-//     return 0;
-// }
+    return 0;
+}*/

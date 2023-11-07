@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 11:03:39 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/26 16:04:31 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/07 08:37:21 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,6 @@ int main()
 	printf("Buffer after bzero: \"%s\"\n", buffer);
 	return(0);
 }*/
+// DESCRIPTION
+//  The bzero() function writes n zeroed bytes to the string s.
+//  If n is zero, bzero() does nothing.

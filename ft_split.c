@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 15:53:39 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/06 14:47:03 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/07 10:58:27 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,27 +77,27 @@ char	**ft_split(char const *s, char c)
 	return (split);
 }
 
-// int main()
-// {
-//     char *str = "split:asd:wer";
-//     char **split = ft_split(str, ':');
+/*int main()
+{
+    char *str = "split:asd:wer";
+    char **split = ft_split(str, ':');
 
-//     if (split)
-//     {
-//         int i = 0;
-//         while (split[i])
-//         {
-//             printf("Word %d: %s\n", i, split[i]);
-//             free(split[i]);
-//             i++;
-//         }
-//         free(split);
-//         split = NULL;
-//     }
-//     else
-//     {
-//         printf("ft_split returned NULL\n");
-//     }
+    if (split)
+    {
+        int i = 0;
+        while (split[i])
+        {
+            printf("Word %d: %s\n", i, split[i]);
+            free(split[i]);
+            i++;
+        }
+        free(split);
+        split = NULL;
+    }
+    else
+    {
+        printf("ft_split returned NULL\n");
+    }
 
-//     return 0;
-// }
+    return 0;
+}*/

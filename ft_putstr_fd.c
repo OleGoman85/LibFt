@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 07:47:42 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/31 07:47:47 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/07 10:57:13 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,15 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 
-// int main()
-// {
-// 	char *message = "Hello, World!";
-// 	int fd = 1; 
+/*int main()
+{
+	char *message = "Hello, World!";
+	int fd = 1; 
 
-// 	ft_putstr_fd(message, fd); 
+	ft_putstr_fd(message, fd); 
 
-// 	return (0);
-// }
+	return (0);
+}*/
 // int fd = 0; - Standard input (STDIN): This file descriptor is 
 // associated with the keyboard or other input source.
 

@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 07:41:45 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/06 16:02:41 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/07 10:29:44 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,16 +56,16 @@ char	*ft_itoa(int n)
 	str[i - 1] = '0' + ln;
 	return (str);
 }
-// int main() {
-// 	int number = -123;
-// 	char *str = ft_itoa(number);
+/*int main() {
+	int number = -123;
+	char *str = ft_itoa(number);
 
-// 	if (str != NULL) {
-// 		printf("Integer as string: %s\n", str);
-// 		free(str);
-// 	} else {
-// 		printf("Memory allocation failed.\n");
-// 	}
+	if (str != NULL) {
+		printf("Integer as string: %s\n", str);
+		free(str);
+	} else {
+		printf("Memory allocation failed.\n");
+	}
 
-// 	return 0;
-// }
+	return 0;
+}*/

@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ogoman <ogoman@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 16:39:14 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/24 16:06:57 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/07 10:29:01 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
 int	ft_isalpha(int c)
 {
@@ -29,3 +28,6 @@ int main()
          printf("%c is not alpha", alpha);
      }
  }*/
+//  RETURN VALUES
+//      The isalpha() function returns zero if the character
+//      tests false and returns non-zero if the character tests true.

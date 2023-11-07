@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 08:28:48 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/26 14:01:32 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/07 10:30:21 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ void	*ft_memset(void *ptr, int value, size_t num)
 	}
 	return (ptr);
 }
-// int main() {
-//     char buffer[20];
-//     ft_memset(buffer, 'A', 10);
-//     printf("Buffer after ft_memset: %s\n", buffer);
-// 	return (0);
-// }
+/*int main() {
+    char buffer[20];
+    ft_memset(buffer, 'A', 10);
+    printf("Buffer after ft_memset: %s\n", buffer);
+	return (0);
+}*/

@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 16:40:46 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/26 14:48:02 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/07 10:25:45 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,3 +57,17 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/*int main() {
+    char src[] = "This is a test string.";
+    char dest[50];
+    ft_memmove(dest, src, 5); 
+    printf("Copied string: %s\n", dest);
+    return 0;
+}*/
+// DESCRIPTION
+// The memmove() function copies len bytes from string src to string dst.
+// The two strings may overlap; the copy is always done in a non-destructive
+// manner.
+
+// RETURN VALUES
+// The memmove() function returns the original value of dst.

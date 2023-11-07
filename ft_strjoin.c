@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 08:03:16 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/27 10:17:45 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/07 11:45:40 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,21 +37,36 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	return (new);
 }
-// int main()
-// {
-//     const char *s1 = "Hello, ";
-//     const char *s2 = "World!";
-//     char *result = ft_strjoin(s1, s2);
+/*int main()
+{
+    const char *s1 = "Hello, ";
+    const char *s2 = "World!";
+    char *result = ft_strjoin(s1, s2);
 
-//     if (result)
-//     {
-//         printf("Result: %s\n", result);
-//         free(result);
-//     }
-//     else
-//     {
-//         printf("Error: Memory allocation failed\n");
-//     }
+    if (result)
+    {
+        printf("Result: %s\n", result);
+        free(result);
+    }
+    else
+    {
+        printf("Error: Memory allocation failed\n");
+    }
 
-//     return (0);
-// }
+    return (0);
+}*/
+// Parameters
+// s1:  The prefix string.
+// s2:  The suffix string.
+
+// Return value
+// The new string.
+// NULL if the allocation fails.
+
+// External functs.
+// malloc
+
+// Description
+// Allocates (with malloc(3)) and returns a new
+// string, which is the result of the concatenation
+// of ’s1’ and ’s2’.

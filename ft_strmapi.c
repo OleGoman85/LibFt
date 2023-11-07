@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 13:04:59 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/28 13:36:10 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/07 14:25:45 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,3 +58,19 @@ int main() {
 
     return 0;
 }*/
+// Parameters
+// s:  The string on which to iterate.
+// f:  The function to apply to each character.
+
+// Return value
+// The string created from the successive applications
+// of ’f’.
+// Returns NULL if the allocation fails.
+
+// External functs.  malloc
+
+// Description
+// Applies the function ’f’ to each character of the
+// string ’s’, and passing its index as first argument
+// to create a new string (with malloc(3)) resulting
+// from successive applications of ’f’.
