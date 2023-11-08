@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 15:53:39 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/07 10:58:27 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/08 15:54:51 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,18 @@
 static int	count_words(const char *s, char c)
 {
 	int	count;
-	int	separator;
 
 	count = 0;
-	separator = 0;
 	while (*s)
 	{
-		if (*s != c && separator == 0)
+		while (*s == c)
+			s++;
+		if (*s != '\0')
 		{
-			separator = 1;
 			count++;
+			while (*s != c && *s != '\0')
+				s++;
 		}
-		else if (*s == c)
-			separator = 0;
-		s++;
 	}
 	return (count);
 }
@@ -79,25 +77,25 @@ char	**ft_split(char const *s, char c)
 
 /*int main()
 {
-    char *str = "split:asd:wer";
-    char **split = ft_split(str, ':');
+	char *str = "split:asd:wer";
+	char **split = ft_split(str, ':');
 
-    if (split)
-    {
-        int i = 0;
-        while (split[i])
-        {
-            printf("Word %d: %s\n", i, split[i]);
-            free(split[i]);
-            i++;
-        }
-        free(split);
-        split = NULL;
-    }
-    else
-    {
-        printf("ft_split returned NULL\n");
-    }
+	if (split)
+	{
+		int i = 0;
+		while (split[i])
+		{
+			printf("Word %d: %s\n", i, split[i]);
+			free(split[i]);
+			i++;
+		}
+		free(split);
+		split = NULL;
+	}
+	else
+	{
+		printf("ft_split returned NULL\n");
+	}
 
-    return 0;
+	return 0;
 }*/

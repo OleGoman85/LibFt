@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 08:26:31 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/03 11:37:07 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/08 07:46:41 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,41 +21,32 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	}
 }
 
-// t_list	*ft_lstnew(void *content)
-// {
-// 	t_list	*node;
+/*int main() 
+{
+    t_list *myList = NULL;
 
-// 	node = (t_list *)malloc(sizeof(t_list));
-// 	if (!node)
-// 	{
-// 		return (NULL);
-// 	}
-// 	node->content = content;
-// 	node->next = NULL;
-// 	return (node);
-// }
+    ft_lstadd_front(&myList, ft_lstnew("Node 1"));
+    ft_lstadd_front(&myList, ft_lstnew("Node 2"));
+    ft_lstadd_front(&myList, ft_lstnew("Node 3"));
 
-// int main() 
-// {
-//     t_list *myList = NULL;
+    t_list *current = myList;
+    while (current) 
+	{
+        printf("%s\n", (char *)current->content);
+        current = current->next;
+    }
 
-//     ft_lstadd_front(&myList, ft_lstnew("Node 1"));
-//     ft_lstadd_front(&myList, ft_lstnew("Node 2"));
-//     ft_lstadd_front(&myList, ft_lstnew("Node 3"));
+    while (myList) 
+	{
+        t_list *temp = myList;
+        myList = myList->next;
+        free(temp);
+    }
 
-//     t_list *current = myList;
-//     while (current) 
-// 	{
-//         printf("%s\n", (char *)current->content);
-//         current = current->next;
-//     }
-
-//     while (myList) 
-// 	{
-//         t_list *temp = myList;
-//         myList = myList->next;
-//         free(temp);
-//     }
-
-//     return 0;
-// }
+    return 0;
+}*/
+// Parameters
+// lst:  The address of a pointer to the first link of
+// a list.
+// new:  The address of a pointer to the node to be
+// added to the list.
