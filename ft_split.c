@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 15:53:39 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/08 15:54:51 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/09 12:25:02 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,29 +49,29 @@ static char	*word_copy(const char *str, int start, int finish)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	i;
-	size_t	j;
-	int		index;
+	size_t	finish;
+	size_t	word;
+	int		start;
 	char	**split;
 
 	split = malloc((count_words(s, c) + 1) * sizeof(char *));
 	if (!s || !split)
 		return (NULL);
-	i = 0;
-	j = 0;
-	index = -1;
-	while (i <= ft_strlen(s))
+	finish = 0;
+	word = 0;
+	start = -1;
+	while (finish <= ft_strlen(s))
 	{
-		if (s[i] != c && index < 0)
-			index = i;
-		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
+		if (s[finish] != c && start < 0)
+			start = finish;
+		else if ((s[finish] == c || finish == ft_strlen(s)) && start >= 0)
 		{
-			split[j++] = word_copy(s, index, i);
-			index = -1;
+			split[word++] = word_copy(s, start, finish);
+			start = -1;
 		}
-		i++;
+		finish++;
 	}
-	split[j] = 0;
+	split[word] = 0;
 	return (split);
 }
 
