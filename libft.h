@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 10:46:28 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/04 14:12:18 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/15 15:50:32 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,27 +71,5 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-// char	*ft_strcpy(char *str1, char *str2);
-// void	*ft_overflow(size_t count, size_t size);
-// void ft_putchar(char c);
-// void ft_puts(const char *str);
-// void ft_strcat(char *dest, const char *src);
-// char *ft_findSubstring(const char *haystack, const char *needle);
-// char *ft_fgets(char *buffer, int size, FILE *stream);
-// int ft_strcmp(const char *str1, const char *str2);
-// FILE *ft_fopen(const char *filename, const char *mode);
-// int ft_fclose(FILE *stream);
-// char* ft_strncpy(char * dst, const char * src, size_t len);
-// char* ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
-// int ft_count_words(const char *s, char c);
-// int ft_factorial(int n);
-// void ft_qsort(void *base, size_t nmemb, size_t size, 
-//int (*compar)(const void *, const void *));
-// int ft_fibonacci(int n);
-// void ft_findMinMax(const int *arr, int length, int *min, int *max);
-// float ft_calculateAverage(int *arr_numbers, int count);
-// void ft_swap(int* pnum1, int* pnum2);
-// int ft_binarySearch(int arr[], int left, int right, int target);
-// int ft_log2_base(int num);
 
 #endif

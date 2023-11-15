@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 07:50:53 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/07 10:43:27 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/15 15:48:04 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,13 +47,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(n / 10, fd);
 	ft_putchar_fd((n % 10) + '0', fd);
 }
-
-/*int main()
-{
-    int number = -12345;
-    int fd = 1;
-
-    ft_putnbr_fd(number, fd);
-
-    return 0;
-}*/

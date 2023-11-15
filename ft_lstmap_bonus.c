@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 13:02:25 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/08 08:53:14 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/15 15:46:31 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,13 +84,13 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		new_content = f(lst->content);
 		if (new_content == NULL)
 		{
-			del(new_content);
 			mem_clear(&new_list, del);
 			return (NULL);
 		}
 		new_node = create_node(new_content);
 		if (new_node == NULL)
 		{
+			del(new_content);
 			mem_clear(&new_list, del);
 			return (NULL);
 		}
@@ -99,53 +99,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-
-/*void *custom_function(void *content)
-{
-	char *original = (char *)content;
-	char *new_content = (char *)malloc(strlen(original) + 1);
-	for (int i = 0; original[i]; i++)
-	{
-		new_content[i] = toupper(original[i]);
-	}
-	new_content[strlen(original)] = '\0';
-	return new_content;
-}
-
-void custom_delete(void *content)
-{
-	free(content);
-}
-
-int main()
-{
-
-	t_list *node1 = (t_list *)malloc(sizeof(t_list));
-	char *data1 = (char *)malloc(10);
-	strcpy(data1, "Hello");
-	node1->content = data1;
-
-	t_list *node2 = (t_list *)malloc(sizeof(t_list));
-	char *data2 = (char *)malloc(10);
-	strcpy(data2, "World");
-	node2->content = data2;
-
-	node1->next = node2;
-	node2->next = NULL;
-
-	t_list *list = node1;
-
-	t_list *new_list = ft_lstmap(list, custom_function, custom_delete);
-
-	t_list *current = new_list;
-	while (current != NULL)
-	{
-		printf("Node content: %s\n", (char *)current->content);
-		current = current->next;
-	}
-	mem_clear(&new_list, custom_delete);
-
-	mem_clear(&list, custom_delete);
-
-	return 0;
-}*/

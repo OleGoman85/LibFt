@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 18:26:06 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/07 10:27:46 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/15 16:00:37 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-/*int main()
-{
-	const char *str = "   -42";
-	int number = ft_atoi(str);
-	printf("Result: %d\n", number);
-	return 0;
-}*/

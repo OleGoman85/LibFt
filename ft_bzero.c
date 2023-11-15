@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 11:03:39 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/07 08:37:21 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/15 15:44:21 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-/*
-int main()
-{
-	char buffer[10];
-	ft_bzero(buffer, sizeof(buffer));
-	printf("Buffer after bzero: \"%s\"\n", buffer);
-	return(0);
-}*/
-// DESCRIPTION
-//  The bzero() function writes n zeroed bytes to the string s.
-//  If n is zero, bzero() does nothing.

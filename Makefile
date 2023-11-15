@@ -25,10 +25,6 @@ ft_lstiter_bonus.c ft_lstmap_bonus.c
 
 OBJ_BONUS = $(BONUS_FILES:.c=.o)
 
-# Object file assembly rule
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
 all: $(NAME)
 
 # Building the library
@@ -43,8 +39,6 @@ fclean: clean clean_bonus
 
 re: fclean all
 
-.PHONY: all clean fclean re
-
 #BONUS
 
 bonus: $(OBJ_BONUS)
@@ -52,3 +46,6 @@ bonus: $(OBJ_BONUS)
 
 clean_bonus:
 	rm -f $(OBJ_BONUS)
+
+.PHONY: all clean fclean re bonus
+

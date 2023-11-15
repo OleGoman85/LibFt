@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 17:31:57 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/07 15:37:45 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/15 15:49:42 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,26 +37,3 @@ char	*ft_strnstr(const char *arr, const char *some_part, size_t len)
 	}
 	return (NULL);
 }
-/*int main()
-{
-    const char *arr = "This is a simple example";
-    const char *some_part = "simple";
-    size_t len = 20;
-
-    char *result = ft_strnstr(arr, some_part, len);
-
-    if (result)
-    {
-        printf("Found part at position: %ld\n", (long)(result - arr));
-    }
-    else
-    {
-        printf("Part not found in the arr.\n");
-    }
-    return 0;
-}*/
-
-// RETURN VALUES
-// If needle is an empty string, haystack is returned; if needle occurs
-// nowhere in haystack, NULL is returned; otherwise a pointer to the first
-// character of the first occurrence of needle is returned.

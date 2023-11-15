@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 07:47:42 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/07 10:57:13 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/15 15:48:13 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,35 +23,3 @@ void	ft_putstr_fd(char *s, int fd)
 		}
 	}
 }
-
-/*int main()
-{
-	char *message = "Hello, World!";
-	int fd = 1; 
-
-	ft_putstr_fd(message, fd); 
-
-	return (0);
-}*/
-// int fd = 0; - Standard input (STDIN): This file descriptor is 
-// associated with the keyboard or other input source.
-
-// int fd = 1; - Standard output (STDOUT): This file descriptor 
-// is associated with the screen or other output device.
-
-// int fd = 2; - Standard Error Output (STDERR): This file descriptor 
-// is used to output error messages and is also usually 
-// associated with the screen.
-
-// int fd = open("file.txt", O_WRONLY); - Open a file for writing: 
-// This file descriptor will be associated with the 
-// specified file.txt and will allow data to be written to that file.
-
-// int fd = socket(AF_INET, SOCK_STREAM, 0); - Create a socket: 
-// This file descriptor is used to establish a network connection.
-
-// int fd = open("/dev/null", O_WRONLY); - Open device /dev/null: 
-// This is a special device that can be used to ignore output.
-
-// int fd = dup(another_fd); - Duplicate file descriptor: You can 
-// create an additional copy of another file descriptor for many purposes.

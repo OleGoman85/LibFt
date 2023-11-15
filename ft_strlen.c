@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 07:42:42 by ogoman            #+#    #+#             */
-/*   Updated: 2023/10/26 13:41:20 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/15 15:49:14 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (length);
 }
-/*
-int main() {
-    const char *str = "Hello, World!";
-    size_t length = ft_strlen(str);
-    printf("string length: %zu\n", length);
- 	return (0);
-}*/
