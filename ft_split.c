@@ -6,13 +6,13 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 15:53:39 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/15 16:02:34 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/15 16:11:18 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_sub_strlen(const char *str, char separator);
+static int	ft_word_len(const char *str, char separator);
 static int	ft_count_word(char const *str, char separator);
 static char	*ft_free_array(char **array, int n);
 char		**ft_split(char const *str, char c);
@@ -36,7 +36,7 @@ static int	ft_count_word(char const *str, char separator)
 	word_count = 0;
 	while (*str)
 	{
-		current_word_length = ft_sub_strlen(str, separator);
+		current_word_length = ft_word_len(str, separator);
 		if (current_word_length != 0)
 		{
 			word_count++;
@@ -48,7 +48,7 @@ static int	ft_count_word(char const *str, char separator)
 	return (word_count);
 }
 
-static int	ft_sub_strlen(const char *str, char separator)
+static int	ft_word_len(const char *str, char separator)
 {
 	int	i;
 
@@ -72,7 +72,7 @@ char	**ft_split(char const *str, char c)
 	i = 0;
 	while (i < word)
 	{
-		current_word_length = ft_sub_strlen(str, c);
+		current_word_length = ft_word_len(str, c);
 		if (current_word_length != 0)
 		{
 			array[i] = ft_substr(str, 0, current_word_length);

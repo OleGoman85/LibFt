@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 07:50:53 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/15 15:48:04 by ogoman           ###   ########.fr       */
+/*   Updated: 2023/11/16 08:10:56 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,8 @@
 static void	ft_max_min_fd(int fd)
 {
 	const char	*str;
-	int			i;
 
 	str = "-2147483648";
-	i = 0;
 	while (*str)
 	{
 		ft_putchar_fd(*str, fd);
