@@ -6,7 +6,7 @@
 /*   By: ogoman <ogoman@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 10:46:28 by ogoman            #+#    #+#             */
-/*   Updated: 2023/11/15 15:50:32 by ogoman           ###   ########.fr       */
+/*   Updated: 2024/06/13 08:47:52 by ogoman           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <string.h>
 # include <stdio.h>
+# include <stddef.h>
 
 typedef struct s_list
 {
@@ -24,6 +25,21 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
+void	sort_int_tab(int *tab, unsigned int size);
+void	ft_rev_wstr(char *str);
+void	ft_epur_str(char *str);
+int		ft_union(char *s1, char *s2);
+int		ft_max(int* tab, unsigned int len);
+void	ft_inter(char *s1, char *s2);
+void	ft_last_word(char *str);
+size_t	ft_strspn(const char *s, const char *accept);
+char	*ft_strrev(char *str);
+char	*ft_strpbrk(const char *s1, const char *s2);
+size_t	ft_strcspn(const char *s, const char *reject);
+void	ft_search_and_replace(char *str, char s1, char s2);
+void	ft_rev_print(char *str);
+void	ft_swap(int *a, int *b);
+void	ft_first_word(char *str);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putendl_fd(char *s, int fd);
@@ -59,6 +75,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t detsize);
 char	*ft_strchr(const char *s, int c);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strrchr(const char *str, int character);
+void	*ft_realloc(void *ptr, size_t old_size, size_t new_size);
+int		ft_strcmp(const char *s1, const char *s2);
 /*
 --------BONUS--------
 */
